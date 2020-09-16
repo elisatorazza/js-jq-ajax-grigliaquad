@@ -10,8 +10,7 @@ $(".genera").click(function(){
    $(".genera").addClass("none");
 
    var numero = data["response"];
-   console.log(numero);
-   selectedButton.text(numero);
+   selectedButton.next().text(numero);
    if (numero <= 5){
      $(".box").addClass("yellow");
    } else {
