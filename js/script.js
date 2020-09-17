@@ -12,12 +12,12 @@ $(".genera").click(function(){
    var numero = data["response"];
    selectedButton.next().text(numero);
    if (numero <= 5){
-     $(".box").addClass("yellow");
+     selectedButton.parents(".box").addClass("yellow");
    } else {
-     $(".box").addClass("green");
+     selectedButton.parents(".box").addClass("green");
    }
  },
- error: function (richiesta, stato, errori) {
+ "error": function (richiesta, stato, errori) {
 
  }
  }
